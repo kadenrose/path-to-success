@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+.root {
+    --teal: #4ca7c0;
+    --purple: #484fb7;
+    --lavender: #6b8fe7;
+    --yellow: #e9bb57;
+    --pink: #d9526f;
+    --darkgray: #1e1e1e;
+    --white: #fff;
+}
+
+body {
+    font-family: "Inter";
+}
+
+h1, h2 {
+    font-family: "Kavoon";
+}
+
+h1 {
+    font-size: 3em;
+}
+
+nav h2 {
+    font-size: 1.5em;
+}
+
+h2 {
+    fon
+}
+/* Fonts
+Add to your CSS Under Imported Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+H1, H2
+Kavoon
+All other text
+Inter
+H1
+3em
+NAV H2
+1.5em
+H2
+2em
+H3
+1.5em
+H4
+1.15em
+Colors
+Teal :#4CA7C0
+Purple: #484FB7
+Lavender: #6B8FE7
+Yellow: #E9BB57; 
+Pink:#D9526F;
+Dark-gray:#1E1E1E; 
+White:#ffffff; 
+
+ */
