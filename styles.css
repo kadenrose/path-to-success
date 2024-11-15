@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-.root {
+:root {
     --teal: #4ca7c0;
     --purple: #484fb7;
     --lavender: #6b8fe7;
@@ -12,23 +12,69 @@
 
 body {
     font-family: "Inter";
+    background-color: var(--purple);
 }
 
-h1, h2 {
+#navh2 {
     font-family: "Kavoon";
+    font-size: 1.5em;
+    background-color: var(--yellow);
+    border-radius: 0 0 20px 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 13px;
 }
 
 h1 {
     font-size: 3em;
 }
 
-nav h2 {
+h2 {
+    font-size: 2em;
+}
+
+h3 {
     font-size: 1.5em;
 }
 
-h2 {
-    fon
+h4 {
+    font-size: 1.15em;
 }
+
+main {
+    background-color: var(--purple);
+    border-radius: 20px;
+    padding: 13px;
+}
+
+header {
+    background-color: var(--lavender);
+    padding: 13px;
+    border-radius: 0 0 20px 20px;
+    color: var(--white);
+    text-align: center;
+}
+
+#subheading {
+    background-color: var(--pink);
+    height: 60px;
+    padding: 13px;
+    border-radius: 0 0 20px 20px;
+    color: var(--white);
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
 /* Fonts
 Add to your CSS Under Imported Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
