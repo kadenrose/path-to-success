@@ -75,6 +75,15 @@ nav ul {
     list-style: none;
 }
 
+nav ul li:nth-last-child(-n+4) {
+    display: none;
+}
+
+@media screen and (min-width:450px) {
+    nav ul li:nth-last-child(-n+4) {
+        display: list-item;
+    }
+}
 /* Fonts
 Add to your CSS Under Imported Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
