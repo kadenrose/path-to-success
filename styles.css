@@ -28,11 +28,13 @@ body {
 
 h1 {
     font-size: 3em;
+    font-family: "Kavoon";
 }
 
 h2 {
     font-size: 2em;
     color: var(--white);
+    font-family: "Kavoon";
 }
 
 h3 {
@@ -74,7 +76,7 @@ nav a {
     text-decoration: none;
 }
 
-nav ul {
+nav ul, #why-choose-us ul {
     list-style: none;
 }
 
@@ -87,6 +89,49 @@ nav ul li:nth-last-child(-n+4) {
     padding: 1px 10px 10px 10px;
     margin-bottom: 6px;
     border-radius: 15px;
+}
+
+#why-choose-us {
+    background-color: var(--pink);
+    padding: 6px;
+    margin-top: 20px;
+}
+
+#why-choose-us ul {
+    display: grid;
+    grid-template-areas: 
+    "personal proven"
+    "support flexible";
+}
+
+#personal {
+    grid-area: personal;
+    background-color: var(--teal);
+}
+
+#proven {
+    grid-area: proven;
+    background-color: var(--lavender);
+}
+
+#support {
+    grid-area: support;
+    background-color: var(--yellow);
+}
+
+#flexible {
+    grid-area: flexible;
+    background-color: var(--white);
+}
+
+#why-choose-us li {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 9px;
+    margin-left: none;
+    font-weight: bold;
+    height: 60px;
 }
 
 @media screen and (min-width:450px) {
@@ -108,7 +153,7 @@ NAV H2
 H2
 2em
 H3
-1.5em
+1.5e
 H4
 1.15em
 Colors
