@@ -134,6 +134,45 @@ nav ul li:nth-last-child(-n+4) {
     height: 60px;
 }
 
+table {
+    border-spacing: 0;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    padding: 15px;
+}
+
+td {
+    background-color: var(--white);
+    border: 1px solid var(--yellow);
+    padding: 15px;
+}
+
+.prices {
+    display: grid;
+    place-items: center;
+}
+
+#firstStep {
+    color: var(--white);
+    background-color: var(--pink);
+    padding: 3px 13px;
+    margin-top: 20px;
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--darkgray);
+    text-transform: uppercase;
+    background-color: var(--white);
+    padding: 20px 100px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 @media screen and (min-width:450px) {
     nav ul li:nth-last-child(-n+4) {
         display: list-item;
