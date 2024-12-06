@@ -40,6 +40,7 @@ h2 {
 h3 {
     font-size: 1.5em;
     color: var(--yellow);
+    text-align: center;
 }
 
 h4 {
@@ -171,37 +172,124 @@ p > a {
     padding: 20px 100px;
     border-radius: 10px;
     font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+}
+footer {
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 50px;
+    border-radius: 0 0 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+footer a:visited {
+    color: var(--white);
 }
 
 @media screen and (min-width:450px) {
+    #oneonone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        gap: 10px;
+    }
+    #relationships {
+        grid-column: 1/3;
+    }
+    #group-coaching {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    #why-choose-us ul {
+        grid-template-areas: 
+        "personal proven support flexible";
+    }
+    #why-choose-us li {
+        text-align: left;
+    }
+    #pricing, #firstStep {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #firstStep p {
+        grid-row: 2/3;
+    }
+    #firstStep h2 {
+        grid-column: 1/3;
+    }
+    #firstStep a {
+        white-space: nowrap;
+    }
+    p > a {
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (min-width:731px) {
+    p > a {
+        padding: 20px 80px;
+    }
+}
+
+@media screen and (min-width:950px) {
     nav ul li:nth-last-child(-n+4) {
         display: list-item;
     }
+    #navh2 {
+        display: none;
+    }
+    #listfour {
+        background-color: var(--yellow);
+        border-radius: 0 0 20px 0;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        padding: 13px;
+    }
+    #listthree {
+        background-color: var(--yellow);
+        position: fixed;
+        top: 0px;
+        right: 160px;
+        padding: 13px;
+    }
+    #listtwo {
+        background-color: var(--yellow);
+        position: fixed;
+        top: 0px;
+        right: 220px;
+        padding: 13px;
+    }
+    #listone {
+        background-color: var(--yellow);
+        border-radius: 0 0 0 20px;
+        position: fixed;
+        top: 0px;
+        right: 360px;
+        padding: 13px;
+    }
+    #oneonone, #group-coaching{
+        grid-template-columns: 1fr;
+    }
+    #relationships {
+        grid-column: 1/2;
+    }
+    #ourservices {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 13px;
+    }
+    #pricing {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #why-choose-us li{
+        text-align: center;
+    }
+    p > a {
+        padding: 20px 120px;
+        text-align: center;
+    }
 }
-/* Fonts
-Add to your CSS Under Imported Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
-H1, H2
-Kavoon
-All other text
-Inter
-H1
-3em
-NAV H2
-1.5em
-H2
-2em
-H3
-1.5e
-H4
-1.15em
-Colors
-Teal :#4CA7C0
-Purple: #484FB7
-Lavender: #6B8FE7
-Yellow: #E9BB57; 
-Pink:#D9526F;
-Dark-gray:#1E1E1E; 
-White:#ffffff; 
-
- */
